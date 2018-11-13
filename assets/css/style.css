@@ -908,11 +908,11 @@ Home Section style
     background: url(../images/homebg.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
-    height: 1000px;
+    height: 800px;
 }
 .main_home{
     overflow: hidden;
-    padding-top: 350px;
+    padding-top: 200px;
     padding-bottom: 450px;
 }
 .home-shadow {
