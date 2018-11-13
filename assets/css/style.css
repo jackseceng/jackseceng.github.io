@@ -1212,6 +1212,10 @@ Footer Section style
     font-family: 'Knewave', cursive;
 }
 
+.author_text p {
+	padding: 8em 0em 0em 0em;
+}
+
 /*copyright
 ==================*/
 .copyright p i {
