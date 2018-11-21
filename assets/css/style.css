@@ -1004,7 +1004,7 @@ Home Section style
 }
 .mouse-scroll {
     position: absolute;
-    left:48%;
+    left:10%;
     display: inline-block;
     line-height: 18px;
     font-size: 13px;
@@ -1013,7 +1013,7 @@ Home Section style
     color: #FFF;
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
-    margin-top:35%;
+    margin-top:10%;
     text-decoration: none;
     overflow: hidden;
 }
