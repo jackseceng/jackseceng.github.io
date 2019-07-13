@@ -1,3 +1,8 @@
+user-agent: *
+Disallow: /assets/
+Disallow: /.git/
+Disallow: /projects/assets/
+Allow: /projects/
 									  ______ _____  _____   ____  _____    _  _ ___   ___  
 									 |  ____|  __ \|  __ \ / __ \|  __ \  | || |__ \ / _ \ 
 									 | |__  | |__) | |__) | |  | | |__) | | || |_ ) | | | |
