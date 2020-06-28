@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Distributed Login</title>
-  <meta content="description" name="A login system that distributes authentication data accross multiple databases, for a decentralised login method">
+  <title>Security Toolbox</title>
+  <meta content="description" name="Toolbox of security tools for offensive/defensive security">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
@@ -83,11 +83,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Distributed Login</h2>
+          <h2>Security Toolbox</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../index.html#projects">Projects</a></li>
-			<li>Distributed Login</li>
+			<li>Security Toolbox</li>
           </ol>
         </div>
 
@@ -100,25 +100,22 @@
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
             <div class="image">
-              <img src="../assets/img/projects/dist_login_about_img1.jpg" class="img-fluid" alt="">
+              <img src="../assets/img/projects/useful_tools_about_img1.jpg" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
               <h3>Project Aims</h3>
               <ul>
-                <li><i class="bx bx-target-lock"></i>Obfuscate security data through distribution</li>
-				<li><i class="bx bx-target-lock"></i>Increase factors of authentication without increasing complexity</li>
-				<li><i class="bx bx-target-lock"></i>Have flexibility to integrate into a number of use cases</li>
+                <li><i class="bx bx-target-lock"></i>Create tools for various different offensive/defensive security requirements</li>
+				<li><i class="bx bx-target-lock"></i>Utilised github as a method of quickly acquiring these tools wherever there is a web connection</li>
+				<li><i class="bx bx-target-lock"></i>Spin off any ideas in other projects</li>
               </ul>
 			  <h3>Features</h3>
               <ul>
-				<li><i class="bx bx-check"></i>Login key is generated from user credentials and datestamp</li>
-				<li><i class="bx bx-check"></i>Key is fingerprinted, this fingerprint is stored in SQL database.</li>
-				<li><i class="bx bx-check"></i>Key is split up and distributed amongst several SQL databases</li>
-				<li><i class="bx bx-check"></i>One part of the key is placed into a USB drive</li>
-				<li><i class="bx bx-check"></i>Login re-compiles split-up key and fingerprints it</li>
-				<li><i class="bx bx-check"></i>If the fingerprint matches the stored print, user is authenticated</li>
+				<li><i class="bx bx-check"></i>RSA Calculator: A script that helps calculate the various elements of RSA</li>
+				<li><i class="bx bx-check"></i>Single Site App: A python based web client that display a pre-determined web page, useful for SOC monitoring</li>
+				<li><i class="bx bx-check"></i>Status Script: A simple bash script that can tell you useful information about your Debian based Linux box.</li>
               </ul>
             </div>
           </div>
@@ -136,12 +133,17 @@
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
                 <figure>
-                  <img src="../assets/img/projects/dist_login_1.png" alt="" class="img-fluid">
+                  <img src="../assets/img/projects/rsa_calc.png" alt="" class="img-fluid">
                 </figure>
               </div>
               <div class="tab-pane" id="tab-2">
                 <figure>
-                  <img src="../assets/img/projects/dist_login_2.png" alt="" class="img-fluid">
+                  <img src="../assets/img/projects/ssa.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+			  <div class="tab-pane" id="tab-3">
+                <figure>
+                  <img src="../assets/img/projects/status.png" alt="" class="img-fluid">
                 </figure>
               </div>
             </div>
@@ -150,18 +152,26 @@
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
                 <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                  <h4>Performance</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Project was adapted for use with ssh as a login mechanism</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Other popular MFA methods for ssh were tested for comparison</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>3 Users were timed from starting connection, to disconnection</p>
+                  <h4>RSA Calculator</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Allows you to enter each part of RSA calculation: n, m, c and tot</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>D part of calculation is still a work in progress</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Written in Python 2.7</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>Security</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Project has 4 factors of authentication</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>These are: Password, USB drive, last group signout & certificates</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>These are 2 things the user knows, and two things the user has</p>
+                  <h4>Single Site App</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Dedicated web interface display app, no search abr or buttons</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Ideal for keeping tabs on a SoC dashboard for example</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Does not support CSS or HTML5 or any dynamic web plugins</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>NOTE: This project borrowed code from <strong>Paweł Miech</strong> (see links below)</p>
+                </a>
+              </li>
+			  <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                  <h4>Status Script</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Bash script for displaying hardware and configuration info for Debian based linux distros</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Currently only tested on Ubuntu distros: 14.04, 16.04 & 18.04</p>
                 </a>
               </li>
             </ul>
@@ -176,11 +186,11 @@
 			<h3>Links</h3>
 		</div>
 		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://github.com/JEdwards27/Dist_Login" target="_blank">GitHub page</a></button>
+			<button type="button" class="btn btn-outline-success"><a href="https://github.com/JEdwards27/useful_tools" target="_blank">GitHub page</a></button>
 		</div>
 		<p>
 		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="../docs/dist-login-public.pdf" target="_blank">Download Report</a></button>
+			<button type="button" class="btn btn-outline-success"><a href="https://pawelmhm.github.io/python/pyqt/qt/webkit/2015/09/08/browser.html" target="_blank">Paweł Miech's tutorial</a></button>
 		</div>
 	</div>
 	  

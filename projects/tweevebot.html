@@ -1,255 +1,248 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>JE/TweeVEBot</title>
-        <meta name="A twitter bot designed to tweet CVE related news and statistics" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
 
-        <!--Google Font link-->
-        <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
-        <!--font-family: 'Knewave', cursive;-->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <title>TweeVEBot</title>
+  <meta content="description" name="Twitter bot that tweets cybersecurity news">
 
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/iconfont.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.css">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        <!-- xsslider slider css -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
 
-        <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: Knight - v2.0.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
+<body>
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container">
 
-        <!--For Plugins external css-->
-        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+      <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+      <div class="logo d-block d-lg-none">
+        <a href="../index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
 
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+      <nav class="nav-menu d-none d-lg-block">
+        <ul class="nav-inner">
+          <li><a href="../index.html#hero">Home</a></li>
+		  <li><a href="../index.html#about">About</a></li>
+		  <li class="nav-logo"><a href="../index.html"><img src="../assets/img/logo.png" class="img-fluid"></a></li>
+          <li class="drop-down"><a>Projects</a>
+            <ul>
+              <li class="drop-down"><a href="#">Security</a>
+                <ul>
+                  <li><a href="dist_login.html">Distributed Login</a></li>
+                  <li><a href="tweevebot.html">TweeVEBot</a></li>
+                  <li><a href="port_knoxx.html">Port Knoxx</a></li>
+                  <li><a href="ssh_2fa.html">SSH 2FA Plugins</a></li>
+                  <li><a href="toolbox.html">Security Toolbox</a></li>
+                </ul>
+              </li>
+			  <li class="drop-down"><a href="#">Other</a>
+                <ul>
+                  <li><a href="fpv_drone.html">FPV Drone</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
 
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
+        </ul>
+      </nav><!-- .nav-menu -->
 
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+    </div>
+  </header><!-- End Header -->
 
-    <body data-spy="scroll" data-target=".navbar-collapse">
+  <main id="main">
 
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs" data-aos="fade-up">
+      <div class="container">
 
-        <!-- Preloader -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
-            </div>
-        </div><!--End off Preloader -->
-
-
-        <div class="culmn">
-            <!--Home page style-->
-
-
-            <nav class="navbar navbar-default bootsnav navbar-fixed black no-background">
-                <div class="container">  
-
-                    <div class="attr-nav">
-                        <ul>
-                            <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                        </ul>
-                    </div>  
-
-
-                    <!-- Start Header Navigation -->
-                    <div class="navbar-header">
-
-                        <a class="navbar-brand" href="https://jacksec.uk">
-                            JE
-                        </a>
-
-                    </div>
-                    <!-- End Header Navigation -->
-                </div>   
-
-
-                <!-- Start Side Menu -->
-                <div class="side">
-                    <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                    <div class="widget">
-                        <h6 class="title">Sections</h6>
-                        <ul class="link main-nav">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li><a href="../index.html#portfolio">Projects Index</a></li>							
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Side Menu -->
-            </nav>
-
-
-            <!--Home Sections-->
-            <section id="home" class="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home">
-                            <div class="col-sm-6">
-                                <div class="home-shadow text-right">
-                                    <img class="wow fadeInUp" src="assets/images/tweevebot_title.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="author_text text-left">
-									<h1 class="wow fadeInDown">TweeVEBot</h1>
-                                    <h3 class="wow fadeInUp">CyberSec news twitter bot</h3>
-                                </div>
-							<a class="mouse-scroll" href="#about"> 
-                                <span class="mouse">
-                                    <span class="mouse-movement"></span>
-                                </span>
-                            <span class="mouse-message fadeIn">scroll</span> 
-                            </a>
-                            </div>
-                        </div>
-						
-
-
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-
-
-
-            <!--About Section--> 
-            <section id="about" class="about bg-white roomy-150">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_about">
-                            <div class="col-md-5 col-md-offset-1 sm-m-top-50">
-                                <div class="head_title">
-                                    <h5><span class="divider"></span> About the project</h5>
-                                </div>
-                                <div class="about_left_item m-top-50">
-                                    <img class="wow fadeInLeft" img src="assets/images/tweevebot_about_img1.jpg" alt="" />
-                                </div>
-                            </div><!-- End off col-md-6 -->
-							
-							<div class="col-md-5 col-md-offset-1">
-                                <div class="about_content">
-                                    <div class="head_right">
-                                        <h2>overview</h2>
-                                    </div>
-                                    <div class="about_content_text">
-                                        <p class="wow fadeInRight"></p>
-                                        <div class="divider1 m-top-10"></div>
-										<div class="about_content_item m-top-20">
-                                            <h6><i class="fa fa-bars"></i> Project aims</h6>
-                                        <ul>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i>Become a go to source of vulnerability related news on Twitter</a></li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i>Tweet out useful information from CVE sites in an easily readable form</a></li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i>Have multiple different tweet formats for various reader feedback driven features</a></li>
-										</ul>
-										</div>
-                                        <div class="about_content_item m-top-20">
-                                            <h6><i class="fa fa-eye"></i> At a glance</h6>
-                                        <ul>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i>First form:</li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>Scrape JSON and HTML from <a href="https://cvedetails.com" target="_blank">cvedetails.com</a></li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>Tweet top 3 CVEs, with 8+ CVSS, exploit count, and url</li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i>Second form (WIP):</li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>Scrape data from exploit databases for latest types of attack</li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>Tweet top 3 of attack types that week, e.g. 1:DDOS, 2:RAT etc</li>
-										<li class="wow fadeInRight"><i class="fa fa-chevron-right"></i>Note: This bot is currently offlie while I work on improvements</li>
-										<div class="wow fadeInRight portfolio_btn text-center m-top-20">
-											<a href="https://github.com/JEdwards27/tweevebot" target="_blank" class="btn btn-primary m-top-20">GitHub page</a>
-										</div>
-										</ul>
-										</div>
-                                    </div>
-                                </div>
-                            </div><!-- End off col-md-6 -->
-
-                        </div><!-- End off Main About -->
-
-                    </div><!-- End off row -->
-                </div><!-- End off container -->
-            </section><!-- End off About Section -->
-			
-
-            <!--Contact Section-->
-            <section id="contact" class="contact bg-black roomy-150">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_contact">
-                            <div class="head_title">
-                                <h5><span class="divider"></span> Further development</h5>
-                            </div>
-                            <div class="col-md-5">
-                                <ul>
-									<li class="wow fadeInLeft">> Working on monthly updates on different types of CVEs</a></li>
-									<li class="wow fadeInLeft">>> Types include: SQLi, DDoS, Remote Code Execution and Privilege Escalation</a></li>
-									<li class="wow fadeInLeft">> Perhaps a feature that will respond to tweets mentioning the bots account</a></li>
-								</ul>
-                            </div>
-                            <div class="col-md-6 col-md-offset-1 sm-m-top-50">
-                                <div class="contact_content">
-                                    <div class="head_right">
-                                        <h2>contact me</h2>
-                                    </div>
-
-                                    <div class="contact_content_text wow fadeInLeft portfolio_btn text-left fix m-top-100">
-                                        <p>If you'd like to get in touch regarding this project, or any of my projects for that matter, feel free to contact me on the channels below. Please state your name when contacting me or your message may be ignored.</p>
-                                        <ul class="m-side-50 list-inline">
-											<li><a href="https://github.com/JEdwards27" target="_blank"><img src="assets/images/github.png" alt="" /></a></li>
-											<li><a href="https://www.linkedin.com/in/jack-edwards-924a47113/" target="_blank"><img src="assets/images/linkedin.png" alt="" /></a></li>
-											<li><a href="https://twitter.com/jacksec27" target="_blank"><img src="assets/images/twitter.png" alt="" /></a></li>
-											<li><a href="mailto:jack.edwards27@gmail.com"><img src="assets/images/email.png" alt="" /></a></li>
-                                        </ul>
-									</div>
-                                    <div class="author_text text-right wow fadeInRight">
-                                        <h1><a style="color:light-blue" href="https://jacksec.uk">Jack Edwards</a></h1>
-									</div>
-									<div class="contact_content_text wow fadeInRight portfolio_btn text-right fix m-top-100">
-                                        <p>Cyber Security</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>TweeVEBot</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+			<li>TweeVEBot</li>
+          </ol>
         </div>
 
-        <!-- JS includes -->
+      </div>
+    </section><!-- End Breadcrumbs -->
 
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <section id="about" class="about">
+      <div class="container">
 
-        <script src="assets/js/jquery.magnific-popup.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/bootsnav.js"></script>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="../assets/img/projects/tweevebot_about_img1.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>Project Aims</h3>
+              <ul>
+                <li><i class="bx bx-target-lock"></i>Become a go to source of vulnerability related news on Twitter</li>
+				<li><i class="bx bx-target-lock"></i>Tweet out useful information from CVE sites in an easily readable form</li>
+				<li><i class="bx bx-target-lock"></i>Have multiple different tweet formats for different types of vulnerability</li>
+              </ul>
+			  <h3>Features</h3>
+              <ul>
+				<li><i class="bx bx-check"></i>Gathers data from JSON feeds from <a href="https://cvedetails.com" target="_blank">>cvedetails.com</a></li>
+				<li><i class="bx bx-check"></i>Tweets top 3 CVEs, with and 8+ CVSS score. Includes exploit count & url</li>
+				<li><i class="bx bx-check"></i>Second version to make detailed attack tweets based on 4 attack types</li>
+				<li><i class="bx bx-check"></i>Types are: SQLi, Privilege Escalation, DDoS & Remote Code Execution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
 
 
+    <section id="skills" class="featured">
+      <div class="container">
 
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <figure>
+                  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Updated: CVE|CVSS(7+)|Vendor:<br><br>CVE-2019-5700 | 7.2 | Shield | <a href="https://t.co/grnAV837iS">https://t.co/grnAV837iS</a><br>CVE-2019-5699 | 7.2 | Shield | <a href="https://t.co/H3SnKc5uFm">https://t.co/H3SnKc5uFm</a><br>CVE-2019-3980 | 10 | Dameware | <a href="https://t.co/GrdKLesmZp">https://t.co/GrdKLesmZp</a><a href="https://twitter.com/hashtag/CyberSecurity?src=hash&amp;ref_src=twsrc%5Etfw">#CyberSecurity</a></p>&mdash; ﾌ卂匚Ҝ 乇ᗪ山卂尺ᗪ丂 (@jacksec27) <a href="https://twitter.com/jacksec27/status/1214109371619323904?ref_src=twsrc%5Etfw">January 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <figure>
+                  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🤖Beep Boop... if you want to reach exploit absolution,🤖<br>&lt;😈&gt;try out this CVE on Code Execution.&lt;😈&gt;<br><br>ID: CVE-2019-17510<br>Score: 10.0 ☠<br>Product: Dir-846 Firmware<a href="https://t.co/HNFBnIsZLM">https://t.co/HNFBnIsZLM</a><a href="https://twitter.com/hashtag/CyberSecurity?src=hash&amp;ref_src=twsrc%5Etfw">#CyberSecurity</a></p>&mdash; ﾌ卂匚Ҝ 乇ᗪ山卂尺ᗪ丂 (@jacksec27) <a href="https://twitter.com/jacksec27/status/1250830049571491841?ref_src=twsrc%5Etfw">April 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                  <h4>Top 3 example</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Lists in order of most recently updated CVE</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Generates tinyurl for each CVE page due to tweet character limit</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Uses #Cybersecurity so it can be found by twitter search</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                  <h4>Detailed exploit example (WIP)</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Details the most recently updated, highest scoring CVE</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Related to one of the 4 chosen categories, in this example the type is remote code execution</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Some use of puns and emojis to spice the tweet up a bit ;)</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+	  
+	<section id="skills" class="featured">
+	  
+	<div class="container footer-bottom clearfix">
+		<div class="row justify-content-center">
+			<h3>Links</h3>
+		</div>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-outline-success"><a href="https://github.com/JEdwards27/TweeVEBot" target="_blank">GitHub page</a></button>
+		</div>
+	</div>
+	  
+    </section><!-- End Featured Section -->
 
-    </body>
+	<section id="contact"></section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a href="#header" class="scrollto footer-logo"><img src="../assets/img/hero-logo1.png" alt=""></a>
+            <h3>Contact</h3>
+            <p>Follow me on socials, or email me directly.</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://twitter.com/jacksec27" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/jack-edwards-924a47113" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+		  <a href="https://github.com/JEdwards27" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+		  <a href="../mail.html" class="email"><i class="bx bx-mail-send"></i></a>
+        </div>
+      </div>
+    </div>
+	
+	<div class="container footer-bottom clearfix">
+		<div class="row justify-content-center">
+			<h3>Associations</h3>
+		</div>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-outline-success"><a href="https://dmuhackers.com" target="_blank">DMU Hackers</a></button>
+		</div>
+		<p>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-outline-success"><a href="https://dmu.ac.uk/home.aspx" target="_blank">De Montfort University</a></button>
+		</div>
+	</div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Jack Edwards</span></strong> 2020. All software and documents licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"> M.I.T. License</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
 </html>
