@@ -136,18 +136,23 @@
             </div>
           </div>
         </div>
-
-      </div>
+	</div>
+	</section>
     
 
 
-    <section id="skills" class="featured">
+    <section id="features" class="featured">
       <div class="container">
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
             <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
+			  <div class="tab-pane active show" id="tab-1">
+                <figure>
+					<img src="../assets/img/projects/tweevebot_about_img2.jpg" class="img-fluid" alt="">
+                </figure>
+              </div>
+			  <div class="tab-pane" id="tab-2">
                 <figure>
                   <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🤖Beep boop... I&#39;m TweeVEBot, &amp; you humans may not have heard this;🤖<br>🖥️💣but there&#39;s a dangerous vuln, that causes Denial of Service:💣🖥️<br><br>CVE ID: CVE-2019-5700<br>CVSS Score: 7.2 ⚠<br>URL: <a href="https://t.co/T2Nn77ZioS">https://t.co/T2Nn77ZioS</a><a href="https://twitter.com/hashtag/CyberSecurity?src=hash&amp;ref_src=twsrc%5Etfw">#CyberSecurity</a><br>Hosted on <a href="https://twitter.com/googlecloud?ref_src=twsrc%5Etfw">@googlecloud</a></p>&mdash; TweeVEBot (@tweevebot) <a href="https://twitter.com/tweevebot/status/1328026325198761986?ref_src=twsrc%5Etfw">November 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
                 </figure>
@@ -156,80 +161,62 @@
           </div>
           <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
             <ul class="nav nav-tabs flex-column">
+			<li class="nav-item">
+			  <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                  <h4>Serverless architecture</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Python code executed as GCP Cloud Function<p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Triggered by GCP Cloud Scheduler via Pub/Sub</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Grabs twitter creds from GCP Secret Manager</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Uses month as argument to create unique tweet</p>
+                </a>
+			  </li>
               <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                  <h4>Tweet showcase</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Details the most recently updated, highest scoring CVE</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Related to one of the 4 chosen categories, in this example the type is Denial of Service</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>References the hosting platform: Google Cloud Platform</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Some use of puns and emojis to spice the tweet up a bit ;)</p>
+                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                  <h4>Resulting tweet</h4>
+                  <p><i class="bx bx-radio-circle-marked"></i>Details the most recently updated, 8+ CVSS</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>1 of 4 categories. In this example; it's DDoS</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Links to vulnerability database that was used</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Puns and emojis for fun ;)</p>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-	 
-	<section id="skills" class="featured">	 
+	  </section>
+	  
+	<section id="links" class="featured">
+	  
+	<div class="container footer-bottom clearfix">
 	  <div class="container">
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-2">
-                <figure>
-					<img src="../assets/img/projects/tweevebot_about_img2.jpg" class="img-fluid" alt="">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <figure>
-					<img src="../assets/img/projects/tweevebot_about_img3.jpg" class="img-fluid" alt="">
-                </figure>
-              </div>
+            <div class="row justify-content-center">
+			<h3>Tutorial video</h3>
+			</div>
+			<div>
+              <a href="https://youtu.be/qAKjd-PlZsI" target="_blank"><img src="../assets/img/projects/tweevebot_about_img3.jpg" class="img-fluid" alt=""></a>
             </div>
           </div>
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item mt-2">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-2">
-                  <h4>GCP Version</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Consolodated functionality into a GCP cloud function, written in Python<p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Triggered by GCP Cloud Scheduler job through Pub/Sub channel</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Significantly reduced security risk due to serverless architecture</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Adds #CyberSecurity and also @googlecloud to the tweet</p>
-                </a>
-              </li>
-			  <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">
-                  <h4>Standalone server version</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Set of scripts that run locally on a Linux server</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Triggered by cronjobs set up on a monthly schedule</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Generates tinyurl for each CVE page due to tweet character limit</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Uses #Cybersecurity so it can be found by twitter search</p>
-                </a>
-              </li>
-            </ul>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <div class="row justify-content-center">
+			  <h3>Links</h3>
+			  </div>
+              <div class="row justify-content-center">
+                <button type="button" class="btn btn-outline-success"><a href="https://twitter.com/tweevebot" target="_blank">Bot Twitter Page</a></button>
+			</div>
+			<p>
+			<div class="row justify-content-center">
+				<button type="button" class="btn btn-outline-success"><a href="https://github.com/jacksec/TweeVEBot" target="_blank">GitHub page</a></button>
+			</div>
+			<p>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-	  
-	<section id="skills" class="featured">
-	  
-	<div class="container footer-bottom clearfix">
-		<div class="row justify-content-center">
-			<h3>Links</h3>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://twitter.com/tweevebot" target="_blank">Bot Twitter Page</a></button>
-		</div>
-		<p>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://github.com/jacksec/TweeVEBot" target="_blank">GitHub page</a></button>
-		</div>
-		<p>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://youtu.be/qAKjd-PlZsI" target="_blank">Tutorial Video</a></button>
-		</div>
+	</div>
 	</div>
 	  
     </section><!-- End Featured Section -->
