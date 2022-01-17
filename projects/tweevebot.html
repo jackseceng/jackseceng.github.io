@@ -78,9 +78,14 @@
                   <li><a href="https://jacksec.engineer/docs/dist-login-public.pdf">Paper: Distributed Login</a></li>
 				</ul>
 			  </li>
-			  <li class="drop-down"><a href="#">Videos</a>
+        <li class="drop-down"><a href="#">Sec|Eng Videos</a>
                 <ul>
                   <li><a href="https://youtu.be/qAKjd-PlZsI" target="_blank">GCP Twitter Bot</a></li>
+                  <li><a href="https://youtu.be/crA8nLwQ4gg" target="_blank">PiHole + VPN server</a></li>
+				</ul>
+			  </li>
+        <li class="drop-down"><a href="#">Drone Videos</a>
+                <ul>
 				  <li><a href="https://youtu.be/ygcLfDEqquc" target="_blank">3" Drone Build & Flight</a></li>
           <li><a href="https://youtu.be/Sm_IuFD1YVs" target="_blank">3" Drone Acro Mode</a></li>
 				  <li><a href="https://youtu.be/PsC_Lsf79Js" target="_blank">5" Drone Freestyle</a></li>
@@ -127,15 +132,15 @@
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
               <h3>Project Aims</h3>
               <ul>
-                <li><i class="bx bx-target-lock"></i>Become a go to source of vulnerability related news on Twitter</li>
-				<li><i class="bx bx-target-lock"></i>Tweet out useful information from CVE sites in an easily readable form</li>
-				<li><i class="bx bx-target-lock"></i>Have multiple different tweet formats for different types of vulnerability</li>
+                <li><i class="bx bx-target-lock"></i>Become a go to source of vulnerability updates on Twitter</li>
+				<li><i class="bx bx-target-lock"></i>Tweet out concise information from CVE databases</li>
+				<li><i class="bx bx-target-lock"></i>Have multiple different tweet formats for different vulnerabilities</li>
               </ul>
 			  <h3>Features</h3>
               <ul>
-				<li><i class="bx bx-check"></i>Gathers data from JSON feeds from cvedetails.com</li>
-				<li><i class="bx bx-check"></i>Tweets top 3 CVEs, with and 8+ CVSS score. Includes exploit count & url</li>
-				<li><i class="bx bx-check"></i>Second version to make detailed attack tweets based on 4 attack types</li>
+				<li><i class="bx bx-check"></i>Gathers data from mitre JSON feeds:<a href="https://www.cvedetails.com/" target="_blank"> cvedetails.com</a></li>
+				<li><i class="bx bx-check"></i>Tweets one of the top 3 CVEs, with and 8+ CVSS score.</li>
+				<li><i class="bx bx-check"></i>Tweets based on one of 4 rotating attack types</li>
 				<li><i class="bx bx-check"></i>Types are: SQLi, Privilege Escalation, DDoS & Remote Code Execution</li>
               </ul>
             </div>
@@ -171,17 +176,17 @@
                   <h4>Serverless architecture</h4>
                   <p><i class="bx bx-radio-circle-marked"></i>Python code executed as GCP Cloud Function<p>
 				  <p><i class="bx bx-radio-circle-marked"></i>Triggered by GCP Cloud Scheduler via Pub/Sub</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Grabs twitter creds from GCP Secret Manager</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Grabs twitter credentialss from GCP Secret Manager</p>
 				  <p><i class="bx bx-radio-circle-marked"></i>Uses month as argument to create unique tweet</p>
                 </a>
 			  </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
                   <h4>Resulting tweet</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Details the most recently updated, 8+ CVSS</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>1 of 4 categories. In this example; it's DDoS</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Links to vulnerability database that was used</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Puns and emojis for fun ;)</p>
+                  <p><i class="bx bx-radio-circle-marked"></i>Details the most recently updated, 8+ CVSS vulnerability</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>1 of 4 categories. In this example, a DDoS CVE</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Link to vulnerability database that was used</p>
+				  <p><i class="bx bx-radio-circle-marked"></i>Puns and emojis for fun &#128521</p>
                 </a>
               </li>
             </ul>
