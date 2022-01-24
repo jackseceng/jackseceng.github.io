@@ -1,7 +1,6 @@
 user-agent: *
 Disallow: /assets/
 Disallow: /.git/
-Disallow: /projects/assets/
 Allow: /projects/
 Allow: /docs/
 									  ______ _____  _____   ____  _____    _  _ ___   ___
