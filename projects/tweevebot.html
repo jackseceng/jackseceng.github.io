@@ -4,280 +4,302 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>TweeVEBot</title>
-  <meta content="description" name="Twitter bot that tweets cybersecurity news">
+  <title>TweeVEBot - Security News Twitter Bot (depricated)</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="jackseceng" />
+  <link rel="manifest" href="assets/img/site.webmanifest" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Knight - v2.0.0
-  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Nov 04 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="service-details-page">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
-      <div class="logo d-block d-lg-none">
-        <a href="https://jacksec.engineer"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul class="nav-inner">
-		  <li><a href="https://jacksec.engineer#about">Portfolio</a></li>
-			<li class="drop-down"><a>Projects</a>
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">Portfolio</a></li>
+          <li class="dropdown"><a href="../about.html#projects"><span>Projects</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li class="drop-down"><a href="#">Security</a>
+              <li><a href="linkshort.html">Link Shortener</a></li>
+              <li><a href="#" class="active">Twitter Bot (depricated)</a></li>
+              <li><a href="ssh_mfa.html">SSH MFA Plugins</a></li>
+              <li><a href="dist_login.html">Distributed Login</a></li>
+              <li class="dropdown"><a href="rc-vehicles.html"><span>RC Vehicles</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="https://jacksec.engineer/projects/tweevebot">TweeVEBot</a></li>
-				  <li><a href="https://jacksec.engineer/projects/dist_login">Distributed Login</a></li>
-				  <li><a href="https://jacksec.engineer/projects/ssh_2fa">SSH 2FA Plugins</a></li>
-                  <li><a href="https://jacksec.engineer/projects/toolbox">Security Toolbox</a></li>
-                </ul>
-              </li>
-			  <li class="drop-down"><a href="#">RC</a>
-                <ul>
-                  <li><a href="https://jacksec.engineer/projects/5inch-quad">5" Quad</a></li>
-				  <li><a href="https://jacksec.engineer/projects/3inch-quad">3" Quad</a></li>
-				  <li><a href="https://jacksec.engineer/projects/microquad">Micro Quad</a></li>
-				  <li><a href="https://jacksec.engineer/projects/rc-car">Car</a></li>
+                  <li><a href="rc-vehicles.html#5-inch-quad">5 inch quadcopter</a></li>
+                  <li><a href="rc-vehicles.html#3-inch-quad">3 inch quadcopter</a></li>
+                  <li><a href="rc-vehicles.html#drift-car">AWD drift car</a></li>
+                  <li><a href="rc-vehicles.html#micro-quad">Micro quadcopter</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-		  <li class="nav-logo"><a href="https://jacksec.engineer"><img src="../assets/img/logo.png" class="align-items-center"></a></li>
-          <li class="drop-down"><a>Resources</a>
+          <li class="dropdown"><a href="../about.html#resources"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-			  <li><a href="https://jacksec.engineer/documents">Documents</a>
-			  </li>
-        <li><a href="https://jacksec.engineer/videos">Videos</a>
-			  </li>
-			</ul>
-		  </li>
-          <li><a href="#contact">Contact</a></li>
-
+              <li><a href="../documents.html">Documents</a></li>
+              <li><a href="../videos.html">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <main id="main">
+  <main class="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs" data-aos="fade-up">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Security news twitter bot</h2>
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <nav class="breadcrumbs">
+        <div class="container">
           <ol>
-            <li><a href="https://jacksec.engineer">Home</a></li>
-            <li><a href="https://jacksec.engineer#projects">Projects</a></li>
-			<li>Security</li>
-			<li>TweeVEBot</li>
+            <li class="current">Projects</li>
+            <li class="current">Twitter Bot</li>
           </ol>
         </div>
+      </nav>
+    </div><!-- End Page Title -->
 
-      </div>
-    </section><!-- End Breadcrumbs -->
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
 
-  <section id="about" class="about">
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="image">
-              <img src="../assets/img/projects/tweevebot_about_img1.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-              <h3>Project Aims</h3>
-              <ul>
-                <li><i class="bx bx-target-lock"></i>Become a go to source of vulnerability updates on Twitter</li>
-				<li><i class="bx bx-target-lock"></i>Tweet out concise information from CVE databases</li>
-				<li><i class="bx bx-target-lock"></i>Have multiple different tweet formats for different vulnerabilities</li>
-              </ul>
-			  <h3>Features</h3>
-              <ul>
-				<li><i class="bx bx-check"></i>Gathers data from mitre JSON feeds (cvedetails.com)</li>
-				<li><i class="bx bx-check"></i>Tweets one of the top 3 CVEs, with and 8+ CVSS score.</li>
-				<li><i class="bx bx-check"></i>Tweets based on one of 4 rotating attack types</li>
-				<li><i class="bx bx-check"></i>Types are: SQLi, Privilege Escalation, DDoS & Remote Code Execution</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-	</div>
-	</section>
+        <div class="row gy-4">
 
-
-
-    <section id="features" class="featured">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="tab-content">
-			  <div class="tab-pane active show" id="tab-1">
-                <figure>
-					<img src="../assets/img/projects/tweevebot_about_img2.jpg" class="img-fluid" alt="">
-                </figure>
-              </div>
-			  <div class="tab-pane" id="tab-2">
-                <figure>
-                  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🤖Beep boop... I&#39;m TweeVEBot, &amp; you humans may not have heard this;🤖<br>🖥️💣but there&#39;s a dangerous vuln, that causes Denial of Service:💣🖥️<br><br>CVE ID: CVE-2019-5700<br>CVSS Score: 7.2 ⚠<br>URL: <a href="https://t.co/T2Nn77ZioS">https://t.co/T2Nn77ZioS</a><a href="https://twitter.com/hashtag/CyberSecurity?src=hash&amp;ref_src=twsrc%5Etfw">#CyberSecurity</a><br>Hosted on <a href="https://twitter.com/googlecloud?ref_src=twsrc%5Etfw">@googlecloud</a></p>&mdash; TweeVEBot (@tweevebot) <a href="https://twitter.com/tweevebot/status/1328026325198761986?ref_src=twsrc%5Etfw">November 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
-            <ul class="nav nav-tabs flex-column">
-			<li class="nav-item">
-			  <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                  <h4>Serverless architecture</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Python code executed as GCP Cloud Function<p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Triggered by GCP Cloud Scheduler via Pub/Sub</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Grabs twitter credentialss from GCP Secret Manager</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Uses month as argument to create unique tweet</p>
-                </a>
-			  </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>Resulting tweet</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Details the most recently updated, 8+ CVSS vulnerability</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>1 of 4 categories. In this example, a DDoS CVE</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Link to vulnerability database that was used</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Puns and emojis for fun &#128521</p>
-                </a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h4>Security news twitter bot</h4>
+            <p><i class="bi bi-exclamation-triangle"></i> NOTICE: This bot is now depricated.</p>
+            <h3>Project Aims:</h3>
+            <ul>
+              <li><i class="bi bi-crosshair"></i> <span>Become a go to source of vulnerability updates on Twitter</span>
               </li>
+              <li><i class="bi bi-crosshair"></i> <span>Tweet out concise information from CVE databases</span></li>
+              <li><i class="bi bi-crosshair"></i> <span>Have multiple different tweet formats for different
+                  vulnerabilities</span></li>
             </ul>
+
           </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <figure>
+              <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">🤖Beep boop... I&#39;m TweeVEBot, &amp; you humans may not have heard
+                  this;🤖<br>🖥️💣but there&#39;s a dangerous vuln, that causes Denial of Service:💣🖥️<br><br>CVE ID:
+                  CVE-2019-5700<br>CVSS Score: 7.2 ⚠<br>URL: <a
+                    href="https://t.co/T2Nn77ZioS">https://t.co/T2Nn77ZioS</a><a
+                    href="https://twitter.com/hashtag/CyberSecurity?src=hash&amp;ref_src=twsrc%5Etfw">#CyberSecurity</a><br>Hosted
+                  on <a href="https://twitter.com/googlecloud?ref_src=twsrc%5Etfw">@googlecloud</a></p>&mdash; TweeVEBot
+                (@tweevebot) <a
+                  href="https://twitter.com/tweevebot/status/1328026325198761986?ref_src=twsrc%5Etfw">November 15,
+                  2020</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+    <!-- Performance Section -->
+    <section class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-span">
+          <p><i class="bi bi-newspaper"></i> <span>Gathers CVE updates from JSON feeds such as <a
+                href="https://cvedetails.com">cvedetails.com</a></span></p>
+          <p><i class="bi bi-list-stars"></i> <span>Tweets one of the top 3 CVEs, with and 8+ CVSS score</span></p>
+          <p><i class="bi bi-dice-4"></i> <span>Tweets one of 4 attack types: SQLi, Privilege Escalation, DDoS &
+              RCE</span></p>
         </div>
       </div>
-	  </section>
-
-	<section id="links" class="featured">
-
-	<div class="container footer-bottom clearfix">
-	  <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="row justify-content-center">
-			<h3>Tutorial video</h3>
-			</div>
-			<div>
-              <a href="https://youtu.be/qAKjd-PlZsI" target="_blank"><img src="../assets/img/projects/tweevebot_about_img3.jpg" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-              <div class="row justify-content-center">
-			  <h3>Links</h3>
-			  </div>
-              <div class="row justify-content-center">
-                <button type="button" class="btn btn-outline-success"><a href="https://twitter.com/tweevebot" target="_blank">Bot Twitter Page</a></button>
-			</div>
-			<p>
-			<div class="row justify-content-center">
-				<button type="button" class="btn btn-outline-success"><a href="https://github.com/jackseceng/TweeVEBot" target="_blank">GitHub page</a></button>
-			</div>
-			<p>
-              </ul>
-            </div>
-          </div>
-        </div>
-	</div>
-	</div>
-
-    </section><!-- End Featured Section -->
-
-	<section id="contact"></section>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
+    </section><!-- /Stats Section -->
+    <!-- Service Details Section -->
+    <section class="service-details section">
 
       <div class="container">
 
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <a href="#header" class="scrollto footer-logo"><img src="../assets/img/hero-logo1.png" alt=""></a>
-            <h3>Contact</h3>
-            <p>Follow me on socials, or email me directly.</p>
+        <div class="row gy-4">
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Architecture</h2>
+          </div><!-- End Section Title -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Infrastructure</h3>
+            <p><i class="bi bi-gear"></i> <span>Python code executed as a GCP Cloud Function</span></p>
+            <p><i class="bi bi-clock"></i> <span>Triggered by GCP Cloud Scheduler via Pub/Sub trigger</span></p>
+            <p><i class="bi bi-lock"></i> Grabs twitter credentials from GCP Secrets Manager</p>
+            <!-- Section Title -->
+            <h3>Execution</h3>
+            <div>
+              <p><i class="bi bi-bug"></i> <span>Details the most recently update 8+ CVSS vulnerability</span></p>
+              <p><i class="bi bi-calendar-month"></i> <span>1 of 4 categories depending on month of the year</span>
+              </p>
+              <p><i class="bi bi-link"></i> Link to vulnerability database entry that was used</p>
+              <p><i class="bi bi-emoji-wink"></i> Uses puns and emojis for fun</p>
+            </div>
+
           </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <!-- draw.io diagram -->
+            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+              data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;dark-mode&quot;:&quot;auto&quot;,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0\&quot; version=\&quot;26.0.16\&quot;&gt;\n  &lt;diagram name=\&quot;Page-1\&quot; id=\&quot;5f0bae14-7c28-e335-631c-24af17079c00\&quot;&gt;\n    &lt;mxGraphModel dx=\&quot;2418\&quot; dy=\&quot;1648\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;350\&quot; pageHeight=\&quot;400\&quot; background=\&quot;none\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;39150e848f15840c-3\&quot; value=\&quot;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Google Cloud Platform&amp;lt;/font&amp;gt;\&quot; style=\&quot;verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12\&quot; parent=\&quot;1\&quot; vertex=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;470\&quot; y=\&quot;374\&quot; width=\&quot;810\&quot; height=\&quot;320\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;39150e848f15840c-11\&quot; style=\&quot;edgeStyle=none;rounded=0;html=1;dashed=1;labelBackgroundColor=none;startArrow=none;startFill=0;startSize=8;endArrow=open;endFill=0;endSize=16;fontFamily=Verdana;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=5;\&quot; parent=\&quot;1\&quot; source=\&quot;JEopTbmVm7iackUkSj2g-7\&quot; target=\&quot;JEopTbmVm7iackUkSj2g-1\&quot; edge=\&quot;1\&quot;&gt;\n          &lt;mxGeometry relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;784.6511627906976\&quot; y=\&quot;433.9453393265447\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;500.38872244274273\&quot; y=\&quot;-171.1916091257707\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-1\&quot; value=\&quot;\&quot; style=\&quot;strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;644.6511627906976\&quot; y=\&quot;90\&quot; width=\&quot;156.27906976744185\&quot; height=\&quot;171.97266966327234\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-24\&quot; value=\&quot;\&quot; style=\&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; source=\&quot;JEopTbmVm7iackUkSj2g-4\&quot;&gt;\n          &lt;mxGeometry relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;917.0188372093021\&quot; y=\&quot;512.0588235294117\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-4\&quot; value=\&quot;\&quot; style=\&quot;sketch=0;html=1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingTop=-6;fontSize=11;fontStyle=1;fontColor=#999999;shape=image;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJzdmc1MzkzNyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTc1LjE2MDYzIDEwNC4yNzczNSIgaGVpZ2h0PSIxMDQuMjc3MzVtbSIgd2lkdGg9IjE3NS4xNjA2M21tIj4mI3hhOyAgPHBhdGggZD0ibSAxMjguNTY5MSwzNC4xMTUyMzYgdiAxMi45Nzg1MTYgbCAtMTIuMzM3ODksLTQuMzgwODYgLTIuNTA5NzcsNy4wNjgzNiAxMi41NDEwMiw0LjQ1MzEyNSAtOC41NjA1NSwxMS40MzE2NCA2LjAwMTk2LDQuNDk2MDk0IDguNTk5NjEsLTExLjQ4MDQ2OSA4LjQ5NDE0LDExLjQ2NDg0NCA2LjAyNzM0LC00LjQ2NDg0NCAtOC40NzI2NiwtMTEuNDMzNTkzIDEyLjY0MDYzLC00LjQ2Njc5NyAtMi41LC03LjA3MDMxMyAtMTIuNDIzODMsNC4zOTA2MjUgViAzNC4xMTUyMzYgWiBtIC00NC43NzY4NzIsMCB2IDEyLjk3ODUxNiBsIC0xMi4zMzc4OTEsLTQuMzgwODYgLTIuNTA5NzY1LDcuMDY4MzYgMTIuNTQxMDE1LDQuNDUzMTI1IC04LjU2MDU0NywxMS40MzE2NCA2LjAwMTk1Myw0LjQ5NjA5NCA4LjU5OTYxLC0xMS40ODA0NjkgOC40OTQxNCwxMS40NjQ4NDQgNi4wMjczNDcsLTQuNDY0ODQ0IC04LjQ3MjY1OSwtMTEuNDMzNTkzIDEyLjY0MDYyOSwtNC40NjY3OTcgLTIuNSwtNy4wNzAzMTMgLTEyLjQyMzgzMiw0LjM5MDYyNSBWIDM0LjExNTIzNiBaIG0gLTQ0Ljc3Njg1LDAgdiAxMi45Nzg1MTYgbCAtMTIuMzM3ODkxLC00LjM4MDg2IC0yLjUwOTc2NSw3LjA2ODM2IDEyLjU0MTAxNSw0LjQ1MzEyNSAtOC41NjA1NDcsMTEuNDMxNjQgNi4wMDE5NTMsNC40OTYwOTQgOC41OTk2MSwtMTEuNDgwNDY5IDguNDk0MTQsMTEuNDY0ODQ0IDYuMDI3MzQ0LC00LjQ2NDg0NCAtOC40NzI2NTYsLTExLjQzMzU5MyAxMi42NDA2MjUsLTQuNDY2Nzk3IC0yLjUsLTcuMDcwMzEzIC0xMi40MjM4MjgsNC4zOTA2MjUgViAzNC4xMTUyMzYgWiBNIDE3NS4xNjA2NCwxMGUtNyBWIDEwNC4yNzczNCBoIC0zNy4yNzY4MiBjIC0xLjIwODU3LDAgLTIuMDAyNDgsLTAuNjIzNTQgLTIuMDAyNDgsLTEuODY2MzQgdiAtOS45MjcyMzggYyAwLC0xLjE0ODI1IDAuNzE1OTYsLTEuNzA2NDIgMi4wMDI0OCwtMS43MDY0MiBoIDIzLjc3NjgyIFYgMTMuNSBoIC0yMy45NDQ5OCBjIC0xLjQwODU1LDAgLTEuOTUxNTEsLTAuNzUyMzE3IC0xLjk1MTUxLC0yLjA3NDQ4MiBWIDEuODQyNzI2IGMgMCwtMS4yNjU5NzEgMC42OTgwOCwtMS44NDI3MjUgMS45NTE1MSwtMS44NDI3MjUgeiBNIDAsMCB2IDEwNC4yNzczNSBoIDM3LjI3NjgxNCBjIDEuMjA4NTcxLDAgMi4wMDI0ODMsLTAuNjIzNTQgMi4wMDI0ODMsLTEuODY2MzQgdiAtOS45MjcyMzggYyAwLC0xLjE0ODI1IC0wLjcxNTk1NywtMS43MDY0MiAtMi4wMDI0ODMsLTEuNzA2NDIgSCAxMy41IFYgMTMuNDk5OTk5IGggMjMuOTQ0OTczIGMgMS40MDg1NTIsMCAxLjk1MTUxMSwtMC43NTIzMTcgMS45NTE1MTEsLTIuMDc0NDgyIFYgMS44NDI3MjUgQyAzOS4zOTY0ODQsMC41NzY3NTQgMzguNjk4NDEsMCAzNy40NDQ5NzMsMCBaIiBzdHlsZT0iY29sb3I6IzAwMDAwMDtvcGFjaXR5OjE7ZmlsbDojNDI4NWY0O2ZpbGwtb3BhY2l0eToxOy1pbmtzY2FwZS1zdHJva2U6bm9uZSIvPiYjeGE7PC9zdmc+;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;1050.0048837209301\&quot; y=\&quot;456.734686985772\&quot; width=\&quot;185.9720930232558\&quot; height=\&quot;110.69767441860465\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-22\&quot; value=\&quot;\&quot; style=\&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; source=\&quot;JEopTbmVm7iackUkSj2g-6\&quot; target=\&quot;JEopTbmVm7iackUkSj2g-7\&quot;&gt;\n          &lt;mxGeometry relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;725.5774418604651\&quot; y=\&quot;512.0826742015847\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-6\&quot; value=\&quot;\&quot; style=\&quot;editableCssRules=.*;html=1;shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjM2MC4zMDM3NjY4NjA4MzYzIiBoZWlnaHQ9IjM3OC4wNTExNTgwNzc0MDg4IiB2aWV3Qm94PSItMC4wMDAxNjI0MjExNDM2MTM3NTU3IC0wLjAwMDEwMDAwNTk0OTIwNzExNTkyIDk1LjMzMDI2MTIzMDQ2ODc1IDEwMC4wMjYxMDAxNTg2OTE0Ij4mI3hhOzxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojYWVjYmZhO30mI3hhOwkuc3Qye2ZpbGw6IzY2OWRmNjt9JiN4YTs8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik03OS45NzEgNzcuNzE1bC03LjM1OSA3LjQ4OCA4LjYzOSA4LjQ5IDcuMzU5LTcuNDg4em0tNjUuMDk2LjA2MWwtOC42NDEgOC40OTIgNy4zNjEgNy40ODggOC42MzktOC40OXoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNzkuNTUzLjIyMWE1LjI1IDUuMjUgMCAwIDAtMy42NiA4Ljk4NEw4Ni4zODkgMTkuNThhNS4yNSA1LjI1IDAgMCAwIDguOTQxLTMuNzY1IDUuMjUgNS4yNSAwIDAgMC0xLjU2LTMuNzA0TDgzLjI3NSAxLjczOEE1LjI1IDUuMjUgMCAwIDAgNzkuNTUzLjIyMXpNMTUuOTE2IDBhNS4yNSA1LjI1IDAgMCAwLTMuNzIzIDEuNTE2TDEuNjk5IDExLjg5MWE1LjI1IDUuMjUgMCAwIDAtLjA0MyA3LjQyNCA1LjI1IDUuMjUgMCAwIDAgNy40MjQuMDQzTDE5LjU3NiA4Ljk4MkE1LjI1IDUuMjUgMCAwIDAgMTUuOTE2IDB6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ4LjEzOCAyNi4yNGMxMy4zNDcgMCAyNS40MzIgMTEuMTM2IDI1LjMxIDI2LjQ4MSAwIDE1LjExLTEyLjI2NyAyNS42NzMtMjUuMTg5IDI1LjY3My0xMS4xNDkgMC0xOC4zMTctNS4xNzEtMjEuOTYtMTAuNzM4bDIxLjgzOS0xNS4wOTd6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MiIgZD0iTTgxLjI1IDkzLjY5M2w0LjY2NCA0LjU4NmE1LjI1IDUuMjUgMCAxIDAgNy4zNjEtNy40OWwtNC42NjYtNC41ODR6TTYuMjM0IDg2LjI2OEwxLjU3IDkwLjg1MWE1LjI1IDUuMjUgMCAwIDAtLjA2NSA3LjQyNCA1LjI1IDUuMjUgMCAwIDAgNy40MjQuMDY0bDQuNjY2LTQuNTg0ek00Ny4zNzEgNS41NzhDMjEuMzQ5IDUuNTc4LjE0NiAyNi43NzkuMTQ2IDUyLjgwMXMyMS4yMDMgNDcuMjI1IDQ3LjIyNSA0Ny4yMjUgNDcuMjI1LTIxLjIwMyA0Ny4yMjUtNDcuMjI1UzczLjM5MyA1LjU3OCA0Ny4zNzEgNS41Nzh6bTAgMTBhMzcuMTUgMzcuMTUgMCAwIDEgMzcuMjI1IDM3LjIyM2MwIDIwLjYxNy0xNi42MDcgMzcuMjI1LTM3LjIyNSAzNy4yMjVTMTAuMTQ2IDczLjQxOCAxMC4xNDYgNTIuODAxYTM3LjE1IDM3LjE1IDAgMCAxIDM3LjIyNS0zNy4yMjN6Ii8+JiN4YTs8L3N2Zz4=;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;499.9960465116279\&quot; y=\&quot;446.9663951318173\&quot; width=\&quot;123.72093023255813\&quot; height=\&quot;130.2325581395349\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-7\&quot; value=\&quot;\&quot; style=\&quot;editableCssRules=.*;html=1;shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE5Ljk4OTk5OTc3MTExODE2NCIgdmlld0JveD0iMCAwIDIwIDE5Ljk4OTk5OTc3MTExODE2NCI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzQyODVmNDt9JiN4YTsJLnN0MXtmaWxsOiM2NjlkZjY7fSYjeGE7CS5zdDJ7ZmlsbDojYWVjYmZhO30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0zIDMuOTlMMCA2LjQydjcuMTNsMyAyLjQ0eiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zIDMuOTlsLTMgNCAzLTJ6bS0zIDhsMyA0di0yeiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0wIDE1Ljk5bDQgNCAyLTItNi02em0uMDEtOEw1Ljk5IDJsLTItMkwwIDMuOTl6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE3IDE2bDMtMi40MlY2LjQ0TDE3IDR6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE3IDE2bDMtNC0zIDJ6bTMtOGwtMy00djJ6Ii8+JiN4YTsJPGcgY2xhc3M9InN0MiI+JiN4YTsJCTxwYXRoIGQ9Ik0yMCA0bC00LTQtMiAyIDYgNnptLS4wMSA4bC01Ljk4IDUuOTkgMiAyTDIwIDE2eiIvPiYjeGE7CQk8Y2lyY2xlIGN4PSI2IiBjeT0iOS45OSIgcj0iMSIvPiYjeGE7CQk8Y2lyY2xlIGN4PSIxMCIgY3k9IjkuOTkiIHI9IjEiLz4mI3hhOwkJPGNpcmNsZSBjeD0iMTMuOTkiIGN5PSI5Ljk5IiByPSIxIi8+JiN4YTsJPC9nPiYjeGE7PC9zdmc+;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;771.92\&quot; y=\&quot;438.97\&quot; width=\&quot;146.22\&quot; height=\&quot;146.22\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-10\&quot; value=\&quot;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Secrets&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Manager&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;\&quot; style=\&quot;text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;1064.8513953488373\&quot; y=\&quot;590.2269531845443\&quot; width=\&quot;156.27906976744185\&quot; height=\&quot;85.98633483163617\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-11\&quot; value=\&quot;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Cloud&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Scheduler&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;\&quot; style=\&quot;text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;483.7169767441862\&quot; y=\&quot;590.228008989817\&quot; width=\&quot;156.27906976744185\&quot; height=\&quot;85.98633483163617\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-12\&quot; value=\&quot;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Cloud&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Function&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;\&quot; style=\&quot;text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;766.8904651162791\&quot; y=\&quot;590.228008989817\&quot; width=\&quot;156.27906976744185\&quot; height=\&quot;85.98633483163617\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-13\&quot; value=\&quot;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Vulnerability&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Databases&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;\&quot; style=\&quot;text;whiteSpace=wrap;html=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;826.9767441860465\&quot; y=\&quot;118.6621116105454\&quot; width=\&quot;208.37209302325581\&quot; height=\&quot;143.31055805272695\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-14\&quot; value=\&quot;\&quot; style=\&quot;shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;584.7441860465117\&quot; y=\&quot;806.5527902636347\&quot; width=\&quot;177.11627906976742\&quot; height=\&quot;177.11627906976742\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-15\&quot; style=\&quot;edgeStyle=none;rounded=0;html=1;dashed=1;labelBackgroundColor=none;startArrow=none;startFill=0;startSize=8;endArrow=open;endFill=0;endSize=16;fontFamily=Verdana;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;strokeWidth=6;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; source=\&quot;JEopTbmVm7iackUkSj2g-7\&quot; target=\&quot;JEopTbmVm7iackUkSj2g-14\&quot;&gt;\n          &lt;mxGeometry relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;866.046511627907\&quot; y=\&quot;462.6074509370901\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;748.8372093023256\&quot; y=\&quot;290.63478127381774\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-16\&quot; value=\&quot;\&quot; style=\&quot;shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=30;position=0.12;position2=0.71;base=37;direction=south;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;771.43\&quot; y=\&quot;777.89\&quot; width=\&quot;178.57\&quot; height=\&quot;81.52\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;JEopTbmVm7iackUkSj2g-17\&quot; value=\&quot;&amp;lt;font style=&amp;quot;font-size: 24px;&amp;quot;&amp;gt;Tweet about vulnerability&amp;lt;/font&amp;gt;\&quot; style=\&quot;text;whiteSpace=wrap;html=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;810\&quot; y=\&quot;783.65\&quot; width=\&quot;133.03\&quot; height=\&quot;70\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;\n&quot;}">
+            </div>
+            <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+          </div>
+
         </div>
 
-        <div class="social-links">
-          <a href="https://twitter.com/jackseceng" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-		  <a href="https://www.youtube.com/channel/UCmBiNqzMX70DlPfCS0j82OA" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-          <a href="https://www.linkedin.com/in/jackseceng" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-		  <a href="https://github.com/jackseceng" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-		  <a href="https://jacksec.engineer/mail" class="email"><i class="bx bx-mail-send"></i></a>
+      </div>
+
+    </section><!-- /Service Details Section -->
+    <!-- Links Section -->
+    <section class="interests section">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-span">
+
+        </div>
+      </div>
+      </div>
+
+    </section><!-- /Links Section -->
+
+    <!-- Links Section -->
+    <section class="interests section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Links</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-github" style="color: #ffffff;"></i>
+              <h3><a href="https://github.com/jackseceng/TweeVEBot" class="stretched-link">GitHub Repo</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-twitter-x" style="color: #00a2ff;"></i>
+              <h3><a href="../docs/dist-login-public.pdf" class="stretched-link">Twitter Page</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-youtube" style="color: #c90000;"></i>
+              <h3><a href="https://youtu.be/qAKjd-PlZsI" class="stretched-link">Tutorial Video</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+        </div>
+
+    </section><!-- /Links Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Contact</h3>
+      <p>Follow me on socials, or email me directly.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/jackseceng"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.youtube.com/channel/UCmBiNqzMX70DlPfCS0j82OA"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/jackseceng"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/jackseceng"><i class="bi bi-github"></i></a>
+        <a href="../contact.html"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>© Copyright</span> <strong class="px-1 sitename">Jack Edwards</strong><span> 2025. All software and
+            documents licensed under the <a href="https;//en.wikipedia.org/wiki/MIT_License">M.I.T.
+              License</a></a></span>
         </div>
       </div>
     </div>
+  </footer>
 
-	<div class="container footer-bottom clearfix">
-		<div class="row justify-content-center">
-			<h3>Associations</h3>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://dmuhackers.com" target="_blank">DMU Hackers</a></button>
-		</div>
-		<p>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://dmu.ac.uk/home.aspx" target="_blank">De Montfort University</a></button>
-		</div>
-	</div>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i>
+  </a>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Jack Edwards</span></strong> 2024. All software and documents licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"> M.I.T. License</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow"></i></a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="../assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="../assets/vendor/venobox/venobox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
   <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
 
 </body>
