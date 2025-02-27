@@ -4,260 +4,338 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Distributed Login</title>
-  <meta content="description" name="A login system that distributes authentication data accross multiple databases, for a decentralised login method">
+  <title>Distributed Login - Secure Credential Distribution</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="jackseceng" />
+  <link rel="manifest" href="assets/img/site.webmanifest" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Knight - v2.0.0
-  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Nov 04 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="service-details-page">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
-      <div class="logo d-block d-lg-none">
-        <a href="https://jacksec.engineer"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul class="nav-inner">
-		  <li><a href="https://jacksec.engineer#about">Portfolio</a></li>
-			<li class="drop-down"><a>Projects</a>
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">Portfolio</a></li>
+          <li class="dropdown"><a href="../about.html#projects"><span>Projects</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li class="drop-down"><a href="#">Security</a>
+              <li><a href="linkshort.html">Link Shortener</a></li>
+              <li><a href="tweevebot.html">Twitter Bot (depricated)</a></li>
+              <li><a href="ssh_mfa.html">SSH MFA Plugins</a></li>
+              <li><a href="#" class="active">Distributed Login</a></li>
+              <li class="dropdown"><a href="rc-vehicles.html"><span>RC Vehicles</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="https://jacksec.engineer/projects/tweevebot">TweeVEBot</a></li>
-				  <li><a href="https://jacksec.engineer/projects/dist_login">Distributed Login</a></li>
-				  <li><a href="https://jacksec.engineer/projects/ssh_2fa">SSH 2FA Plugins</a></li>
-                  <li><a href="https://jacksec.engineer/projects/toolbox">Security Toolbox</a></li>
-                </ul>
-              </li>
-			  <li class="drop-down"><a href="#">RC</a>
-                <ul>
-                  <li><a href="https://jacksec.engineer/projects/5inch-quad">5" Quad</a></li>
-				  <li><a href="https://jacksec.engineer/projects/3inch-quad">3" Quad</a></li>
-				  <li><a href="https://jacksec.engineer/projects/microquad">Micro Quad</a></li>
-				  <li><a href="https://jacksec.engineer/projects/rc-car">Car</a></li>
+                  <li><a href="rc-vehicles.html#5-inch-quad">5 inch quadcopter</a></li>
+                  <li><a href="rc-vehicles.html#3-inch-quad">3 inch quadcopter</a></li>
+                  <li><a href="rc-vehicles.html#drift-car">AWD drift car</a></li>
+                  <li><a href="rc-vehicles.html#micro-quad">Micro quadcopter</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-		  <li class="nav-logo"><a href="https://jacksec.engineer"><img src="../assets/img/logo.png" class="align-items-center"></a></li>
-          <li class="drop-down"><a>Resources</a>
+          <li class="dropdown"><a href="../about.html#resources"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-			  <li><a href="https://jacksec.engineer/documents">Documents</a>
-			  </li>
-        <li><a href="https://jacksec.engineer/videos">Videos</a>
-			  </li>
-			</ul>
-		  </li>
-          <li><a href="#contact">Contact</a></li>
-
+              <li><a href="../documents.html">Documents</a></li>
+              <li><a href="../videos.html">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <main id="main">
+  <main class="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs" data-aos="fade-up">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Secure credential distribution</h2>
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <nav class="breadcrumbs">
+        <div class="container">
           <ol>
-            <li><a href="https://jacksec.engineer">Home</a></li>
-            <li><a href="https://jacksec.engineer#projects">Projects</a></li>
-			<li>Security</li>
-			<li>Distributed Login</li>
+            <li class="current">Projects</li>
+            <li class="current">Distributed Login</li>
           </ol>
         </div>
+      </nav>
+    </div><!-- End Page Title -->
 
-      </div>
-    </section><!-- End Breadcrumbs -->
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
 
-  <section id="about" class="about">
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="image">
-              <img src="../assets/img/projects/dist_login_about_img1.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-              <h3>Project Aims</h3>
-              <ul>
-                <li><i class="bx bx-target-lock"></i>Obfuscate security data through distribution</li>
-				<li><i class="bx bx-target-lock"></i>Increase factors of authentication without increasing complexity</li>
-				<li><i class="bx bx-target-lock"></i>Have flexibility to integrate into a number of use cases</li>
-              </ul>
-			  <h3>Features</h3>
-              <ul>
-				<li><i class="bx bx-check"></i>Login key is generated from user credentials and datestamp</li>
-				<li><i class="bx bx-check"></i>Key is fingerprinted, this fingerprint is stored in SQL database.</li>
-				<li><i class="bx bx-check"></i>Key is split up and distributed amongst several SQL databases</li>
-				<li><i class="bx bx-check"></i>One part of the key is placed into a USB drive</li>
-				<li><i class="bx bx-check"></i>Login re-compiles split-up key and fingerprints it</li>
-				<li><i class="bx bx-check"></i>If the fingerprint matches the stored print, user is authenticated</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <div class="row gy-4">
 
-      </div>
-
-
-
-    <section id="skills" class="featured">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <figure>
-                  <img src="../assets/img/projects/dist_login_1.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <figure>
-                  <img src="../assets/img/projects/dist_login_2.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                  <h4>Performance</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Project was adapted for use with ssh as a login mechanism</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>Other popular MFA methods for ssh were tested for comparison</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>3 Users were timed from starting connection, to disconnection</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>Security</h4>
-                  <p><i class="bx bx-radio-circle-marked"></i>Project has 4 factors of authentication</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>These are: Password, USB drive, last group signout & certificates</p>
-				  <p><i class="bx bx-radio-circle-marked"></i>These are 2 things the user knows, and two things the user has</p>
-                </a>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <h4>Final Year University Project</h4>
+            <p>Secure distribution of credentials accross multiple storage locations</p>
+            <h3>Project Aims:</h3>
+            <ul>
+              <li><i class="bi bi-crosshair"></i> <span>Obfuscate security data through distribution</span></li>
+              <li><i class="bi bi-crosshair"></i> <span>Increase factors of authentication without increasing
+                  complexity</span></li>
+              <li><i class="bi bi-crosshair"></i> <span>Have flexibility to integrate into a number of use cases</span>
               </li>
             </ul>
+
           </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/dl/dist_login.png" alt="" class="img-fluid services-img">
+          </div>
+
         </div>
+
       </div>
 
-	  <p></p>
+    </section><!-- /Service Details Section -->
 
-	  <div class="container footer-bottom clearfix">
-		<div class="row justify-content-center">
-			<h3>Links</h3>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://github.com/jackseceng/Dist_Login" target="_blank">GitHub page</a></button>
-		</div>
-		<p>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="../docs/dist-login-public.pdf" target="_blank">Download Paper</a></button>
-		</div>
-	</div>
+    <!-- Performance Section -->
+    <section class="skills section">
 
-    </section><!-- End Featured Section -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Performance Testing</h2>
+      </div><!-- End Section Title -->
 
-	<section id="contact"></section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  </main><!-- End #main -->
+        <div class="col-lg-6"><p><i class="bi bi-terminal"></i> <span>Project was adapted for use with SSH as a login
+            protocol</span></p>
+          <p><i class="bi bi-lock"></i> <span>Other popular MFA methods were tested for comparison</span></p>
+          <p><i class="bi bi-clock"></i> <span>Three users were timed from start to disconnection</span></p>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <div class="footer-top">
+        </div>
 
-      <div class="container">
+        <div class="row skills-content skills-animation">
 
-        <div class="row justify-content-center">
           <div class="col-lg-6">
-            <a href="#header" class="scrollto footer-logo"><img src="../assets/img/hero-logo1.png" alt=""></a>
-            <h3>Contact</h3>
-            <p>Follow me on socials, or email me directly.</p>
+
+            <div class="progress">
+              <span class="skill"><span>Proposed System</span> <i class="val">36.306 seconds</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="51" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Google Authenticator</span> <i class="val">15.099 seconds</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
           </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>SMS Authentication</span> <i class="val">65.8 seconds</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Email Authentication</span> <i class="val">29.236 seconds</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
         </div>
 
-        <div class="social-links">
-          <a href="https://twitter.com/jackseceng" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-		  <a href="https://www.youtube.com/channel/UCmBiNqzMX70DlPfCS0j82OA" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-          <a href="https://www.linkedin.com/in/jackseceng" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-		  <a href="https://github.com/jackseceng" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-		  <a href="https://jacksec.engineer/mail" class="email"><i class="bx bx-mail-send"></i></a>
+      </div>
+
+    </section><!-- /Performance Section -->
+
+    <!-- Stats Section -->
+    <section class="stats section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Security Factors</h2>
+          </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-lg-10">
+        <p><span>Project has four factors of authentication</span></p>
+        <p><span>> Two factors are what the user knows: Password, Last Group Signout</span></p>
+        <p><span>> Two factors are what the user has: USB drive, Certificates</span></p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-star"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Proposed System</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-google"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Google</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-phone-vibrate"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>SMS</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-envelope"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Email</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+        <!-- Links Section -->
+        <section class="interests section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Links</h2>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="features-item">
+                  <i class="bi bi-github" style="color: #ffffff;"></i>
+                  <h3><a href="https://github.com/jackseceng/Dist_Login" class="stretched-link">GitHub Repo</a></h3>
+                </div>
+              </div><!-- End Feature Item -->
+    
+              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="features-item">
+                  <i class="bi bi-file-pdf" style="color: #c00000;"></i>
+                  <h3><a href="../docs/dist-login-public.pdf" class="stretched-link">Research Paper</a></h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="features-item">
+                  <i class="bi bi-link" style="color: #008cff;"></i>
+                  <h3><a href="https://ieeexplore.ieee.org/document/9850279" class="stretched-link">IEEE Publication</a></h3>
+                </div>
+              </div><!-- End Feature Item -->
+    
+          </div>
+    
+        </section><!-- /Links Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Contact</h3>
+      <p>Follow me on socials, or email me directly.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/jackseceng"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.youtube.com/channel/UCmBiNqzMX70DlPfCS0j82OA"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/jackseceng"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/jackseceng"><i class="bi bi-github"></i></a>
+        <a href="../contact.html"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>© Copyright</span> <strong class="px-1 sitename">Jack Edwards</strong><span> 2025. All software and documents licensed under the <a href="https;//en.wikipedia.org/wiki/MIT_License">M.I.T. License</a></a></span>
         </div>
       </div>
     </div>
+  </footer>
 
-	<div class="container footer-bottom clearfix">
-		<div class="row justify-content-center">
-			<h3>Associations</h3>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://dmuhackers.com" target="_blank">DMU Hackers</a></button>
-		</div>
-		<p>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-outline-success"><a href="https://dmu.ac.uk/home.aspx" target="_blank">De Montfort University</a></button>
-		</div>
-	</div>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Jack Edwards</span></strong> 2024. All software and documents licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"> M.I.T. License</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow"></i></a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="../assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="../assets/vendor/venobox/venobox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
   <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
 
 </body>
