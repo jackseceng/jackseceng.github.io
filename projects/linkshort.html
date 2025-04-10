@@ -118,9 +118,7 @@
               <li><i class="bi bi-crosshair"></i> <span>URL reputation checking, QR code generation &amp; link collison
                   detection</span></li>
               <li><i class="bi bi-crosshair"></i> <span>Built with Python3 &amp; CSS/HTML reactive page elements</span>
-              <li><i class="bi bi-crosshair"></i> <span>Use a <a
-                    href="https://github.com/GoogleContainerTools/distroless">distroless</a> runtime, ensuring limited
-                  security
+              <li><i class="bi bi-crosshair"></i> <span>Use a minimal runtime, ensuring limited security
                   risk during execution</span>
               <li><i class="bi bi-crosshair"></i> <span>Development pipeline has security tooling built-in</span>
               </li>
@@ -155,7 +153,7 @@
           <p><i class="bi bi-file-break"></i> <span>Sanitisation of input from user for both URLs and
               extensions on requests</span></p>
           <p><i class="bi bi-lock"></i> <span>Checks on user shared URLs, to ensure they begin with HTTPS</span></p>
-          <p><i class="bi bi-box-seam"></i> Uses distroless containers for runtime security</p>
+          <p><i class="bi bi-box-seam"></i> Uses scratch container image for runtime security</p>
           <p><i class="bi bi-shield-check"></i> Checks submitted URLs against spam lists, rejects known spam domains</p>
           <p><i class="bi bi-qr-code"></i> Generates QR codes for users to download and share</p>
           <p><i class="bi bi-file-code"></i> A frontend with reactive CSS &amp; HTML</p>
@@ -269,11 +267,18 @@
               <h3><a href="https://github.com/jackseceng/LinkShort" class="stretched-link">Code: GitHub</a></h3>
             </div>
           </div><!-- End Feature Item -->
+          
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-box-seam" style="color: #0059fd;"></i>
+              <h3><a href="https://hub.docker.com/r/jackseceng/linkshort" class="stretched-link">Image: Docker Hub</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="features-item">
               <i class="bi bi-cloud" style="color: #a6ff00;"></i>
-              <h3><a href="https://cloud.run" class="stretched-link">Platform: GCP</a></h3>
+              <h3><a href="https://cloud.run" class="stretched-link">Hosting: GCP</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
@@ -281,13 +286,6 @@
             <div class="features-item">
               <i class="bi bi-database" style="color: #00fd7f;"></i>
               <h3><a href="https://turso.tech" class="stretched-link">Database: Turso</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="features-item">
-              <i class="bi bi-box-seam" style="color: #0059fd;"></i>
-              <h3><a href="https://hub.docker.com/r/jackseceng/linkshort" class="stretched-link">Image: Docker Hub</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
