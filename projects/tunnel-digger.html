@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tailscale Exit Node Terraformer</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="jackseceng" />
+  <link rel="manifest" href="../assets/img/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="https://jacksec.engineer">Home</a></li>
+          <li><a href="../about">Portfolio</a></li>
+          <li class="dropdown"><a href="../about#projects"><span>Projects</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="cubelink">Cube Link</a></li>
+              <li><a href="#" class="active">Tunnel Digger</a></li>
+              <li><a href="tweevebot">Twitter Bot (Deprecated)</a></li>
+              <li><a href="ssh_mfa">SSH MFA Plugins</a></li>
+              <li><a href="dist_login">Distributed Login</a></li>
+              <li class="dropdown"><a href="rc-vehicles"><span>RC Vehicles</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="rc-vehicles#5-inch-quad">5 inch quadcopter</a></li>
+                  <li><a href="rc-vehicles#3-inch-quad">3 inch quadcopter</a></li>
+                  <li><a href="rc-vehicles#drift-car">AWD drift car</a></li>
+                  <li><a href="rc-vehicles#micro-quad">Micro quadcopter</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../about#resources"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="../documents">Documents</a></li>
+              <li><a href="../videos">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li class="current">Projects</li>
+            <li class="current">Tunnel Digger</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h4>Tailscale Exit Node Terraformer</h4>
+            <p>Tunnel Digger is a browser-based tool that generates Terraform configuration files to deploy Tailscale exit nodes on cloud providers. It provides an interactive wizard that walks you through choosing a server location, selecting a provider, entering credentials, and downloading a ready-to-deploy Terraform package.</p>
+            <p>Demonstration available at: <a href="https://tunnel-digger.je-7ea.workers.dev/">tunnel-digger.je-7ea.workers.dev</a></p>
+            <p>Supported providers:</p>
+            <ul>
+              <li><i class="bi bi-cloud"></i> <span>Hetzner</span></li>
+              <li><i class="bi bi-cloud"></i> <span>DigitalOcean</span></li>
+              <li><i class="bi bi-cloud"></i> <span>Linode</span></li>
+            </ul>
+            <h3>Project Aims:</h3>
+            <ul>
+              <li><i class="bi bi-crosshair"></i> <span>Give users sovereignty over their VPN infrastructure</span></li>
+              <li><i class="bi bi-crosshair"></i> <span>Introduce Terraform and Infrastructure as Code in an approachable manner</span></li>
+              <li><i class="bi bi-crosshair"></i> <span>Privacy-focused — no analytics, no tracking, no data collection</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- Flow diagram showing the Tunnel Digger workflow -->
+            <style>
+              .td-flow {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.8rem;
+              }
+              .td-flow .flow-step {
+                position: relative;
+                padding: 14px 16px;
+              }
+              .td-flow .flow-arrow {
+                text-align: center;
+                padding: 4px 0;
+                color: #6c63ff;
+                font-size: 1.2rem;
+              }
+              .td-flow .flow-arrow i {
+                animation: td-pulse-arrow 1.5s ease-in-out infinite;
+              }
+              @keyframes td-pulse-arrow {
+                0%, 100% { opacity: 0.4; transform: translateY(0); }
+                50% { opacity: 1; transform: translateY(3px); }
+              }
+              /* Step 1: Mock browser */
+              .td-flow .mock-browser {
+                border: 2px solid #444;
+                border-radius: 8px;
+                overflow: hidden;
+                background: #1a1a2e;
+              }
+              .td-flow .mock-browser-bar {
+                background: #333;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+              }
+              .td-flow .mock-browser-bar span.dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                display: inline-block;
+              }
+              .td-flow .mock-browser-bar span.dot:nth-child(1) { background: #ff5f56; }
+              .td-flow .mock-browser-bar span.dot:nth-child(2) { background: #ffbd2e; }
+              .td-flow .mock-browser-bar span.dot:nth-child(3) { background: #27c93f; }
+              .td-flow .mock-browser-bar .url {
+                margin-left: 10px;
+                color: #aaa;
+                font-size: 0.7rem;
+              }
+              .td-flow .mock-browser-body {
+                padding: 10px 12px 20px;
+              }
+              .td-flow .mock-browser-body label {
+                color: #9ca3af;
+                font-size: 0.65rem;
+                display: block;
+                margin-bottom: 2px;
+              }
+              .td-flow .mock-input {
+                display: block;
+                width: 100%;
+                background: #2d2d44;
+                border: 1px solid #555;
+                border-radius: 4px;
+                padding: 4px 8px;
+                color: #e0e0e0;
+                margin-bottom: 6px;
+                font-size: 0.72rem;
+                white-space: nowrap;
+                overflow: hidden;
+                position: relative;
+                height: 26px;
+              }
+              .td-flow .mock-input::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30px;
+                height: 100%;
+                background: linear-gradient(to right, transparent, #2d2d44);
+                pointer-events: none;
+              }
+              .td-flow .mock-input.typing {
+                border-color: #6c63ff;
+                animation: td-cursor-blink 1s step-end infinite;
+                overflow: hidden;
+              }
+              @keyframes td-cursor-blink {
+                50% { border-color: #6c63ff; }
+              }
+              .td-flow .mock-btn {
+                background: #6c63ff;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 4px 24px;
+                font-size: 0.85rem;
+                display: block;
+                width: 50%;
+                margin: 8px auto 0;
+                text-align: center;
+                position: relative;
+              }
+              .td-flow .mock-cursor {
+                position: absolute;
+                left: 50%;
+                bottom: -18px;
+                transform: translateX(-50%);
+                animation: td-cursor-bounce 1.2s ease-in-out infinite;
+                font-size: 0.9rem;
+                -webkit-text-stroke: 1px #000;
+                text-shadow: 0 0 2px rgba(0,0,0,0.5);
+              }
+              @keyframes td-cursor-bounce {
+                0%, 100% { transform: translateX(-50%) translateY(0); }
+                50% { transform: translateX(-50%) translateY(-4px); }
+              }
+              /* Region text cycling in sync with map dot */
+              .td-flow .region-cycle {
+                display: inline-block;
+                animation: td-region-fade 2.5s ease infinite;
+                max-width: 100%;
+                overflow: hidden;
+              }
+              .td-flow .region-cycle::after {
+                content: "Falkenstein, Germany";
+                animation: td-region-cycle 7.5s step-end infinite;
+              }
+              @keyframes td-region-cycle {
+                0%, 33.2% { content: "Falkenstein, Germany"; }
+                33.3%, 66.5% { content: "Atlanta, USA"; }
+                66.6%, 100% { content: "Singapore"; }
+              }
+              @keyframes td-region-fade {
+                0% { opacity: 0; transform: translateY(6px); }
+                15% { opacity: 1; transform: translateY(0); }
+                85% { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(-6px); }
+              }
+              /* Price cycling in sync with region */
+              .td-flow .price-cycle {
+                display: inline-block;
+                animation: td-region-fade 2.5s ease infinite;
+              }
+              .td-flow .price-cycle::after {
+                content: "$4.51";
+                animation: td-price-cycle 7.5s step-end infinite;
+              }
+              @keyframes td-price-cycle {
+                0%, 33.2% { content: "$4.51"; }
+                33.3%, 66.5% { content: "$6.00"; }
+                66.6%, 100% { content: "$5.00"; }
+              }
+              /* Provider cycling in sync */
+              .td-flow .provider-cycle {
+                display: inline-block;
+                animation: td-region-fade 2.5s ease infinite;
+              }
+              .td-flow .provider-cycle::after {
+                content: "Hetzner";
+                animation: td-provider-cycle 7.5s step-end infinite;
+              }
+              @keyframes td-provider-cycle {
+                0%, 33.2% { content: "Hetzner"; }
+                33.3%, 66.5% { content: "Linode"; }
+                66.6%, 100% { content: "DigitalOcean"; }
+              }
+              /* Key label cycling */
+              .td-flow .key-label {
+                display: inline-block;
+                animation: td-key-label-fade 10s ease infinite;
+              }
+              .td-flow .key-label::after {
+                content: "Tailscale Auth Key";
+                animation: td-key-label 10s step-end infinite;
+              }
+              @keyframes td-key-label {
+                0%, 49.9% { content: "Tailscale Auth Key"; }
+                50%, 100% { content: "Cloud Provider API Key"; }
+              }
+              @keyframes td-key-label-fade {
+                0%, 45% { opacity: 1; }
+                48%, 52% { opacity: 0; }
+                55%, 95% { opacity: 1; }
+                98%, 100% { opacity: 0; }
+              }
+              /* Key value cycling in sync */
+              .td-flow .key-value {
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: td-key-typing 5s ease infinite;
+                border-right: 1px solid #6c63ff;
+                vertical-align: middle;
+                line-height: 1;
+              }
+              .td-flow .key-value::after {
+                content: "tskey-auth-k3F9x•••";
+                animation: td-key-value 10s step-end infinite;
+              }
+              @keyframes td-key-value {
+                0%, 49.9% { content: "tskey-auth-k3F9x•••"; }
+                50%, 100% { content: "sk-proj-8xN2m•••••"; }
+              }
+              @keyframes td-key-typing {
+                0%, 10% { max-width: 0; opacity: 1; }
+                70% { max-width: 200px; opacity: 1; }
+                90% { max-width: 200px; opacity: 0; }
+                100% { max-width: 0; opacity: 0; }
+              }
+              /* Map dot animation */
+              .td-flow .map-dot {
+                /* Position animated via SVG <animate> */
+              }
+              .td-flow .map-dot-ping {
+                animation: td-map-ping 1.2s ease-out infinite;
+                transform-origin: center;
+                transform-box: fill-box;
+              }
+              @keyframes td-map-ping {
+                0% { transform: scale(1); opacity: 0.8; stroke-width: 2; }
+                100% { transform: scale(4); opacity: 0; stroke-width: 0.5; }
+              }
+              /* Step 2: Download */
+              .td-flow .download-step {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                justify-content: center;
+                transform: translateX(0);
+              }
+              .td-flow .download-step .dl-pc {
+                font-size: 1.8rem;
+                color: #e0e0e0;
+              }
+              .td-flow .download-step .dl-icon {
+                font-size: 1.8rem;
+                color: #6c63ff;
+                animation: td-slide-to-pc 1.5s ease-in-out infinite;
+              }
+              .td-flow .download-step .dl-files {
+                color: #27c93f;
+                font-size: 0.78rem;
+                margin-left: 0;
+              }
+              @keyframes td-slide-to-pc {
+                0% { transform: translateX(0); opacity: 1; }
+                70% { transform: translateX(-32px); opacity: 1; }
+                90% { transform: translateX(-32px); opacity: 0; }
+                100% { transform: translateX(0); opacity: 0; }
+              }
+              /* Step 3: Terraform apply */
+              .td-flow .tf-step {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+                flex-wrap: wrap;
+              }
+              .td-flow .tf-step .tf-logo {
+                font-size: 1.8rem;
+                color: #7b42f6;
+              }
+              .td-flow .tf-step .spinner {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #444;
+                border-top: 2px solid #6c63ff;
+                border-radius: 50%;
+                animation: td-spin 1s linear infinite;
+              }
+              @keyframes td-spin {
+                to { transform: rotate(360deg); }
+              }
+              .td-flow .tf-step .tf-output {
+                color: #27c93f;
+                font-family: 'Roboto', monospace;
+                font-size: 0.78rem;
+                line-height: 1.4;
+              }
+              /* Step 4: Traffic globe */
+              .td-flow .traffic-step {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                justify-content: center;
+              }
+              .td-flow .traffic-step .globe {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.2rem;
+                height: 2.2rem;
+              }
+              .td-flow .traffic-step .globe i {
+                font-size: 2.2rem;
+                color: #47aeff;
+              }
+              .td-flow .traffic-step .globe .orbit-dot {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background: #27c93f;
+                border-radius: 50%;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                animation: td-emit 2s linear infinite;
+                opacity: 0;
+              }
+              .td-flow .traffic-step .globe .orbit-dot:nth-child(2) { animation-delay: 0.5s; }
+              .td-flow .traffic-step .globe .orbit-dot:nth-child(3) { animation-delay: 1s; }
+              .td-flow .traffic-step .globe .orbit-dot:nth-child(4) { animation-delay: 1.5s; }
+              @keyframes td-emit {
+                0% { left: 0; opacity: 1; }
+                100% { left: -40px; opacity: 0; }
+              }
+              .td-flow .traffic-step .traffic-text {
+                color: #27c93f;
+                font-size: 0.78rem;
+                font-weight: 500;
+              }
+              .td-flow .traffic-step .traffic-sub {
+                color: #9ca3af;
+                font-size: 0.78rem;
+              }
+            </style>
+
+            <div class="td-flow">
+              <!-- Step 1: Browser with form -->
+              <div class="flow-step">
+                <div class="mock-browser">
+                  <div class="mock-browser-bar">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span class="url">tunnel-digger</span>
+                  </div>
+                  <div class="mock-browser-body">
+                    <!-- Mini map with animated location dot -->
+                    <div class="mini-map">
+                      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100px;border-radius:4px;background:#2d2d44;margin-bottom:8px;">
+                        <!-- North America -->
+                        <path d="M20,25 L25,20 L35,18 L40,20 L45,18 L50,22 L52,28 L50,32 L55,35 L52,40 L48,42 L45,45 L40,48 L35,50 L30,48 L28,44 L25,40 L22,35 L20,30 Z" fill="#555" opacity="0.7"/>
+                        <!-- South America -->
+                        <path d="M42,52 L48,50 L52,52 L55,56 L54,62 L52,68 L48,75 L45,78 L42,76 L40,70 L38,64 L39,58 L40,55 Z" fill="#555" opacity="0.7"/>
+                        <!-- Europe -->
+                        <path d="M88,20 L92,18 L96,19 L100,18 L104,20 L106,24 L104,28 L100,30 L98,33 L95,35 L92,33 L88,30 L86,26 L87,22 Z" fill="#555" opacity="0.7"/>
+                        <!-- Africa -->
+                        <path d="M88,38 L92,36 L98,37 L104,38 L108,42 L110,48 L108,55 L105,62 L100,68 L96,70 L92,68 L88,62 L86,55 L85,48 L86,42 Z" fill="#555" opacity="0.7"/>
+                        <!-- Asia -->
+                        <path d="M110,18 L118,16 L128,15 L138,16 L148,18 L155,20 L162,24 L168,28 L170,34 L168,38 L164,42 L158,44 L150,45 L142,44 L135,42 L128,40 L122,38 L118,35 L114,30 L112,25 L110,22 Z" fill="#555" opacity="0.7"/>
+                        <!-- Southeast Asia / Indonesia -->
+                        <path d="M148,48 L152,46 L158,47 L164,48 L168,50 L172,52 L170,55 L165,56 L158,55 L152,53 L148,51 Z" fill="#555" opacity="0.7"/>
+                        <!-- Australia -->
+                        <path d="M155,62 L162,60 L170,61 L176,64 L178,68 L176,73 L172,76 L166,77 L160,75 L156,72 L154,68 L155,65 Z" fill="#555" opacity="0.7"/>
+                        <!-- Greenland -->
+                        <path d="M58,12 L64,10 L70,11 L74,14 L72,18 L68,20 L62,19 L58,16 Z" fill="#555" opacity="0.7"/>
+                        <!-- UK / Ireland -->
+                        <path d="M84,22 L86,20 L88,21 L87,24 L85,25 Z" fill="#555" opacity="0.7"/>
+                        <!-- Japan -->
+                        <path d="M168,26 L170,24 L172,25 L173,28 L171,31 L169,30 Z" fill="#555" opacity="0.7"/>
+                        <!-- Animated dot jumping between locations -->
+                        <circle class="map-dot" cx="96" cy="26" r="3" fill="#6c63ff">
+                          <animate attributeName="cx" values="96;96;38;38;155;155;96" keyTimes="0;0.27;0.33;0.6;0.66;0.93;1" dur="7.5s" repeatCount="indefinite"/>
+                          <animate attributeName="cy" values="26;26;35;35;50;50;26" keyTimes="0;0.27;0.33;0.6;0.66;0.93;1" dur="7.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle class="map-dot-ping" cx="96" cy="26" r="3" fill="none" stroke="#6c63ff" stroke-width="1">
+                          <animate attributeName="cx" values="96;96;38;38;155;155;96" keyTimes="0;0.27;0.33;0.6;0.66;0.93;1" dur="7.5s" repeatCount="indefinite"/>
+                          <animate attributeName="cy" values="26;26;35;35;50;50;26" keyTimes="0;0.27;0.33;0.6;0.66;0.93;1" dur="7.5s" repeatCount="indefinite"/>
+                        </circle>
+                      </svg>
+                    </div>
+                    <div style="display: flex; gap: 6px; align-items: flex-end;">
+                      <div style="flex: 1; min-width: 0;">
+                        <label>Location, Country</label>
+                        <span class="mock-input"><span class="region-cycle"></span></span>
+                      </div>
+                      <div style="flex: 1; min-width: 0;">
+                        <label>Provider</label>
+                        <span class="mock-input"><span class="provider-cycle"></span></span>
+                      </div>
+                      <div style="flex: 1; min-width: 0;">
+                        <label>Est. Monthly Price</label>
+                        <span class="mock-input"><span class="price-cycle"></span></span>
+                      </div>
+                    </div>
+                    <label class="key-label"></label>
+                    <span class="mock-input typing"><span class="key-value"></span></span>
+                    <span class="mock-btn">Generate <i class="bi bi-hand-index-fill mock-cursor"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="flow-arrow"><i class="bi bi-arrow-down-short"></i></div>
+
+              <!-- Step 2: Download to PC -->
+              <div class="flow-step">
+                <div class="download-step">
+                  <i class="bi bi-pc-display dl-pc"></i>
+                  <i class="bi bi-file-earmark-zip dl-icon"></i>
+                  <div style="text-align: left;">
+                    <div class="dl-files"><i class="bi bi-download"></i> Download deployment files</div>
+                    <div style="color: #9ca3af; font-size: 0.78rem; padding-left: 0;">User Configured Terraform</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="flow-arrow"><i class="bi bi-arrow-down-short"></i></div>
+
+              <!-- Step 3: Terraform apply -->
+              <div class="flow-step">
+                <div class="tf-step">
+                  <span class="tf-logo"><i class="bi bi-boxes"></i></span>
+                  <span class="spinner"></span>
+                  <div>
+                    <div class="tf-output">$ terraform <span class="typed" data-typed-items="init, plan, apply"></span><span class="typed-cursor typed-cursor--blink"></span></div>
+                    <div style="color: #9ca3af; font-size: 0.78rem;">Apply complete! 1 added.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="flow-arrow"><i class="bi bi-arrow-down-short"></i></div>
+
+              <!-- Step 4: Traffic through globe -->
+              <div class="flow-step">
+                <div class="traffic-step">
+                  <div class="globe">
+                    <i class="bi bi-globe"></i>
+                    <div class="orbit-dot"></div>
+                    <div class="orbit-dot"></div>
+                    <div class="orbit-dot"></div>
+                    <div class="orbit-dot"></div>
+                  </div>
+                  <div>
+                    <div class="traffic-text"><i class="bi bi-check-circle"></i> Exit node online</div>
+                    <div class="traffic-sub">Traffic Rerouted</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+    <!-- Features Section -->
+    <section class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-span">
+          <p><i class="bi bi-map"></i> <span>Interactive Leaflet map for choosing server location</span></p>
+          <p><i class="bi bi-list-ol"></i> <span>Step-by-step wizard flow: location, provider setup, credentials, review, and download</span></p>
+          <p><i class="bi bi-file-code"></i> <span>Generated Terraform package including main.tf, variables.tf, cloud-init.yaml, terraform.tfvars, deploy scripts, .gitignore, and README</span></p>
+          <p><i class="bi bi-shield-lock"></i> <span>"I don't trust you" option — enter credentials manually without using the in-browser form</span></p>
+          <p><i class="bi bi-moon-stars"></i> <span>Dark/light mode toggle for comfortable viewing</span></p>
+          <p><i class="bi bi-question-circle"></i> <span>FAQ page answering common questions about deployment and usage</span></p>
+          <p><i class="bi bi-laptop"></i> <span>Client-side-only execution — no backend, no data sent to servers</span></p>
+          <p><i class="bi bi-phone"></i> <span>Responsive design for desktop and mobile devices</span></p>
+          <p><i class="bi bi-universal-access"></i> <span>Accessible markup with semantic HTML and keyboard navigation</span></p>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Philosophy Section -->
+    <section class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Design Philosophy</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-span">
+          <p><i class="bi bi-eye-slash"></i> <span>Privacy-focused design — no analytics, no tracking, no backend. Your data never leaves your browser.</span></p>
+          <p><i class="bi bi-shield-check"></i> <span>Security-conscious approach — generated .gitignore excludes secrets, and security notes document the trust model so users can make informed decisions.</span></p>
+          <p><i class="bi bi-cpu"></i> <span>AI-assisted HTML/CSS/JS development, with hands-on Terraform configurations drawn from real Infrastructure as Code experience.</span></p>
+          <p><i class="bi bi-key"></i> <span>VPN sovereignty — providing an alternative to trusting commercial VPN companies by letting users deploy and control their own exit nodes.</span></p>
+        </div>
+
+      </div>
+
+    </section><!-- /Philosophy Section -->
+
+    <!-- Hosting Section -->
+    <section class="interests section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Hosting</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-github" style="color: #ffffff;"></i>
+              <h3><a href="https://github.com/jackseceng/tunnel-digger" class="stretched-link">Code: GitHub</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-cloud" style="color: #f48120;"></i>
+              <h3><a href="https://pages.cloudflare.com" class="stretched-link">Hosting: CF Pages</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Hosting Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Contact</h3>
+      <p>Follow me on socials, or email me directly.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/jackseceng" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://bsky.app/profile/jacksec.engineer" aria-label="Bluesky"><i class="bi bi-hash"></i></a>
+        <a href="https://www.youtube.com/channel/UCmBiNqzMX70DlPfCS0j82OA" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/jackseceng" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/jackseceng" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="../contact.html" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>© Copyright</span> <strong class="px-1 sitename">Jack Edwards</strong><span> 2026. All software and
+            documents licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License">M.I.T.
+              License</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/aos/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="https://cdn.jsdelivr.net/gh/jackseceng/jackseceng.github.io@master/assets/js/main.js"></script>
+
+</body>
+
+</html>
